@@ -28,6 +28,7 @@ or
 ### Example:
 
 ![](https://github.com/Antoine-ADAM/ArchiGenerator/blob/main/exemples/tp_03.png?raw=true)
+![](https://github.com/Antoine-ADAM/ArchiGenerator/blob/main/exemples/test.png?raw=true)
 
 
 ### Functioning:

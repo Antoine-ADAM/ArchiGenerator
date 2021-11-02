@@ -27,10 +27,10 @@ or
   
 ### Example:
 
-![](https://github.com/Antoine-ADAM/TpGenerator/blob/main/exemples/tp_03.png?raw=true)
+![](https://github.com/Antoine-ADAM/ArchiGenerator/blob/main/exemples/tp_03.png?raw=true)
 
 
 ### Functioning:
 
-![](https://github.com/Antoine-ADAM/TpGenerator/blob/main/exemples/demo1.png?raw=true)
-![](https://github.com/Antoine-ADAM/TpGenerator/blob/main/exemples/demo2.png?raw=true)
+![](https://github.com/Antoine-ADAM/ArchiGenerator/blob/main/exemples/demo1.png?raw=true)
+![](https://github.com/Antoine-ADAM/ArchiGenerator/blob/main/exemples/demo2.png?raw=true)

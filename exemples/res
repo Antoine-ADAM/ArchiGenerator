@@ -1,0 +1,38 @@
+David Bouchet – Architecture des ordinateurs – EPITA – S3 – 2021/2022
+T.P. 3
+La pile et les sous-programmes
+Prérequis : avoir lu les pages 27 à 32 du cours.
+ Étape     1 
+Dans cette étape, nous allons reprendre le programme du TP précédent, qui renvoie la valeur absolue d’un
+entier signé, et le transformer en sous-programme.
+• Tapez le programme ci-dessous et sauvegardez-le sous le nom "Abs.asm".
+            ; ==============================
+            ; Initialisation des vecteurs
+            ; ==============================
+            org     $4
+vector_001  dc.l    Main
+            ; ==============================
+            ; Programme principal
+            ; ==============================
+            org     $500
+Main        move.l  #-4,d0
+            jsr     Abs
+            move.l  #-32500,d0
+            jsr     Abs
+            illegal
+            ; ==============================
+            ; Sous-programmes
+            ; ==============================
+Abs         tst.l   d0
+            bpl     \quit
+            neg.l   d0
+\quit       rts
+Ce code source est divisé en trois parties :
+• Initialisation des vecteurs ;
+• Programme principal ;
+• Sous-programmes.
+Notez bien cette structure. Lorsque vous réaliserez vos propres sous-programmes, ils devront
+être testés de cette manière ; c’est-à-dire à partir de l’appel d’un programme principal. Il vous
+faudra ainsi créer dans tous les cas un programme principal, contenant un ou plusieurs appels à
+vos sous-programmes avec différentes valeurs de tests.
+T.P. 3 1/10
